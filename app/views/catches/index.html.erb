@@ -1,5 +1,6 @@
 <h1>釣果一覧</h1>
 <% @catches.each do |catch| %>
+  <h4><%= catch.Text %></h4>
   <li><%= catch.size %></li>
   <li><%= catch.prefecture.name %></li>
 <% end %>
