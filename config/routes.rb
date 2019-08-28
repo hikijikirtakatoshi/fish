@@ -16,5 +16,5 @@ end
 	root 'users#index'
   resources :catches
   resources :prefectures
-  reaources :points
+  resources :points
 end
