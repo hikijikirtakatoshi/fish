@@ -5,6 +5,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # before_action :configure_account_update_params, only: [:update]
 
   def detail
+    @user = User.find_by(id: params[:id])
   end
 
   # GET /resource/sign_up
@@ -56,7 +57,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # The path used after sign up.
   def after_sign_up_path_for(resource)
     # super(resource)
-    "/user/#{current_user.id}"
+    "/users"
   end
 
   # The path used after sign up for inactive accounts.
