@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_28_145447) do
+ActiveRecord::Schema.define(version: 2019_08_28_172640) do
 
   create_table "areas", force: :cascade do |t|
     t.string "name"
@@ -27,6 +27,13 @@ ActiveRecord::Schema.define(version: 2019_08_28_145447) do
     t.text "Text"
     t.boolean "is_public"
     t.integer "area_id"
+  end
+
+  create_table "images", force: :cascade do |t|
+    t.string "url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "catch_id"
   end
 
   create_table "points", force: :cascade do |t|
