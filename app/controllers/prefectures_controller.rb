@@ -1,3 +1,5 @@
 class PrefecturesController < ApplicationController
-	@prefectures = Prefecture.all
+	def index
+		@prefectures = Prefecture.all
+	end
 end
