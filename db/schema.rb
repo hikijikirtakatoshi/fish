@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_29_011901) do
+ActiveRecord::Schema.define(version: 2019_08_29_043911) do
 
   create_table "areas", force: :cascade do |t|
     t.string "name"
@@ -28,6 +28,10 @@ ActiveRecord::Schema.define(version: 2019_08_29_011901) do
     t.boolean "is_public"
     t.integer "area_id"
     t.boolean "is_area_public"
+    t.integer "pressure"
+    t.integer "humidity"
+    t.integer "wind_speed"
+    t.integer "wind_degree"
   end
 
   create_table "images", force: :cascade do |t|
