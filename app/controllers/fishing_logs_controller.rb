@@ -6,4 +6,8 @@ class FishingLogsController < ApplicationController
 	def show
 		@fishing_log = FishingLog.find(paramas[:id])
 	end
+
+	def new 
+		@fishing_log = FishingLog.new
+	end
 end
