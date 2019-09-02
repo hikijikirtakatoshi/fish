@@ -6,7 +6,7 @@ end
 
 csv_data = CSV.read(Rails.root.to_s + "/Prefectures.csv")
 csv_data.each do |prefecture| 
-	Prefecture.create!(name: prefecture[1], area_id: 1) if Prefecture.find_by(name: prefecture[1]) == nil
+	Prefecture.create!(name: prefecture[1], area_id: prefecture[2].to_i + 1) if Prefecture.find_by(name: prefecture[1]) == nil
 end
 
 
