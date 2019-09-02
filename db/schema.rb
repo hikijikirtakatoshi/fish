@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_08_29_081815) do
+ActiveRecord::Schema.define(version: 2019_08_29_082229) do
 
   create_table "areas", force: :cascade do |t|
     t.string "name"
@@ -32,6 +32,12 @@ ActiveRecord::Schema.define(version: 2019_08_29_081815) do
     t.integer "humidity"
     t.integer "wind_speed"
     t.integer "wind_degree"
+  end
+
+  create_table "companions", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "fishing_logs", force: :cascade do |t|

@@ -17,7 +17,7 @@ module Fish
     # the framework and any gems in your application.
 
     # 表示時のタイムゾーンをJSTに設定
-	configurationonfig.time_zone = 'Tokyo'
+	config.time_zone = 'Tokyo'
 	# DB保存時のタイムゾーンをJSTに設定
 	config.active_record.default_timezone = :local
   end
