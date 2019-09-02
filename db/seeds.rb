@@ -11,6 +11,6 @@ end
 
 point = Point.create!(name: "那珂川") if Point.find_by(name: "那珂川")  == nil
 
-FishingLog.create!(started_at: Time.current, finished_at: Time.current - 1000, point_id: 1)
+FishingLog.create!(title: "貴重な一匹", started_at: Time.current, finished_at: Time.current - 1000, point_id: 1)
 
 

@@ -4,4 +4,5 @@ class FishingLog < ApplicationRecord
 
 	validates :started_at, presence: true
 	validates :finished_at, presence: true
+	validates :title, presence: true
 end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_09_02_054154) do
+ActiveRecord::Schema.define(version: 2019_09_02_055110) do
 
   create_table "areas", force: :cascade do |t|
     t.string "name"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2019_09_02_054154) do
     t.time "started_at"
     t.time "finished_at"
     t.integer "point_id"
+    t.string "title"
   end
 
   create_table "images", force: :cascade do |t|
