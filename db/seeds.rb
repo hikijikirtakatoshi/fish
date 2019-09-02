@@ -9,8 +9,8 @@ csv_data.each do |prefecture|
 	Prefecture.create!(name: prefecture[1], area_id: prefecture[2].to_i + 1) if Prefecture.find_by(name: prefecture[1]) == nil
 end
 
-point = Point.create!(name: "御笠川") if Point.find_by(name: "御笠川")  == nil
+point = Point.create!(name: "那珂川") if Point.find_by(name: "那珂川")  == nil
 
-FishingLog.create!(started_at: Time.current, finished_at: Time.current - 1000)
+FishingLog.create!(started_at: Time.current, finished_at: Time.current - 1000, point_id: 1)
 
 
