@@ -1,6 +1,8 @@
 <h1>釣行一覧</h1>
 <% @fishing_logs.each do |fishing_log| %>
-  <li><%= fishing_log.started_at %></li>
-  <li><%= fishing_log.finished_at %></li>
-  <li><%= fishing_log.point.name %></li>
+	<h2><%= fishing_log.title%></h2>
+  <li>開始時刻<%= fishing_log.started_at %></li>
+  <li>終了時刻<%= fishing_log.finished_at %></li>
+  <li>フィールド<%= fishing_log.point.name %></li>
+  <li><%= fishing_log.catches.count %>匹</li>
 <% end %>
