@@ -1,0 +1,2 @@
+namespace :weather do
+end

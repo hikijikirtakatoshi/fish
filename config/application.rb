@@ -20,5 +20,7 @@ module Fish
 	config.time_zone = 'Tokyo'
 	# DB保存時のタイムゾーンをJSTに設定
 	config.active_record.default_timezone = :local
+
+  config.autoload_paths += %W(#{config.root}/lib)
   end
 end
